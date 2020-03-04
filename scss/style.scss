@@ -9,6 +9,11 @@ $blue: #0076A3;
 $font-body: 'Hepta Slab';
 $font-headings: 'Oswald';
 
+$color-item-border: $red;
+$color-media-head: $blue;
+
+
+
 html {
     font-size: 62.5%;
   }
@@ -36,8 +41,7 @@ a {
     margin: 0 auto;
   }
   //creating  variable = another
-  $color-item-border: $red;
-  $color-media-head: $blue;
+
   // nesting styles
   .media {
       margin: 0;
