@@ -1,17 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Oswald&display=swap');
+
+//creating variables
+$background: #022933;
+$text-color:  #EEE8D6;
+$red: #D14348; //red;
+// $links: black;
+$blue: #0076A3;
+$font-body: 'Hepta Slab';
+$font-headings: 'Oswald';
+
 html {
     font-size: 62.5%;
   }
+  /*
+a {
+    color: $links;
+} */ 
   
   body {
     margin: 0;
     padding: 0;
     font-size: 1.8rem;
-    font-family: 'Helvetica', sans-serif;
-    color: #022933;
-    background-color: #EEE8D6;
+    font-family: 'Hepta Slab', sans-serif; //'Helvetica'
+    color: $text-color; // #022933;
+    background-color:  $background; // #EEE8D6;
   }
   
+  h1, h2, h3, h4, h5, h6 {
+      color: $red;
+      font-family: 'Oswald', sans-serif;
+  }
+
   .container {
     width: 80%;
     margin: 0 auto;
+  }
+  //creating  variable = another
+  $color-item-border: $red;
+  $color-media-head: $blue;
+  // nesting styles
+  .media {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      .media .item {
+          margin-bottom: 20px;
+          border-top: 1px dotted $color-item-border;
+          padding-top: 10px;;
+      }
+      .media .head {
+          margin: 0;
+          padding: 0;
+          color: $color-media-head;
+          font-size: 2rem;
+      }
+      .media p {
+          margin: 0;
+          font-size: 1.5rem;
+      }
+      .media img {
+          float: left;
+          margin-right: 10px;
+      }
+      .media a {
+          text-decoration: none;
+          color: $text-color;
+      }
   }
