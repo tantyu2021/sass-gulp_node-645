@@ -19,3 +19,15 @@
         clear: both;
     }
 }
+
+@mixin imageGrid($qty, $margin) {
+    width: ((100% - (($qty - 1) * $margin )) / $qty);
+    &:nth-child(n) {
+        margin-bottom: $margin;
+        margin-top: $margin;
+    }
+    &:nth-child(#{$qty}n) {
+        margin-bottom: 0;
+        margin-top: o;
+    }    
+}

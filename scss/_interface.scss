@@ -30,3 +30,17 @@ $color-btn-cool: $blue;
     @extend %btn;//with % create a Shadow class
     background: $color-btn-cool;
 }
+
+.grid {
+    @include clearfix;
+    .item {
+        float: left;
+        @include imageGrid(5, 1%);
+    }
+    img {
+        display: block;
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+}
