@@ -24,10 +24,10 @@
     width: ((100% - (($qty - 1) * $margin )) / $qty);
     &:nth-child(n) {
         margin-bottom: $margin;
-        margin-top: $margin;
+        margin-right: $margin;
     }
     &:nth-child(#{$qty}n) {
         margin-bottom: 0;
-        margin-top: o;
+        margin-right: 0;
     }    
 }

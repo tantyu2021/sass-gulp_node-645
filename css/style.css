@@ -398,6 +398,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #0076A3;
 }
 
+.grid {
+  margin-bottom: 10px;
+}
+
 .grid:before, .grid:after {
   content: '';
   display: table;
@@ -409,17 +413,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid .item {
   float: left;
-  width: 19.2%;
+  width: 32%;
 }
 
 .grid .item:nth-child(n) {
-  margin-bottom: 1%;
-  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-right: 2%;
 }
 
-.grid .item:nth-child(5n) {
+.grid .item:nth-child(3n) {
   margin-bottom: 0;
-  margin-top: o;
+  margin-right: 0;
 }
 
 .grid img {

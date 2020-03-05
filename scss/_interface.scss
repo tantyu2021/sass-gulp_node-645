@@ -32,10 +32,11 @@ $color-btn-cool: $blue;
 }
 
 .grid {
+    margin-bottom: 10px;
     @include clearfix;
     .item {
         float: left;
-        @include imageGrid(5, 1%);
+        @include imageGrid(3, 2%);
     }
     img {
         display: block;
