@@ -22,6 +22,9 @@
         padding: 0;
         color: $color-media-head;
         font-size: 2rem;
+        #typography & {  //# - if
+color: $red;
+        }
     }
      p {
         margin: 0;
