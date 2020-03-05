@@ -1,3 +1,4 @@
+//LOAD FONTS
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab|Oswald&display=swap');
 
 //creating variables
@@ -8,8 +9,9 @@ $red:         #D14348; //red;
 // $links: black;
 $blue:        #0076A3;
 $yellow:      rgb(233,207,62);//yellow;
-$font-body: 'Hepta Slab';
-$font-headings: 'Oswald';
+$font-body: 'Hepta Slab'; //need '' if space btwn words
+$font-headings: Oswald, helvetica, sans-serif; //create a list
 
+// COLORS for MEDIA
 $color-item-border: $red;
 $color-media-head: $blue;

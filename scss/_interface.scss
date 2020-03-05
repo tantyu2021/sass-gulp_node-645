@@ -2,6 +2,7 @@ $color-btn-text: $darkblue;
 $color-btn-default: $text-color;
 $color-btn-hot: $red;
 $color-btn-cool: $blue;
+$roundness: 20px 0px 20px 0px; //creating a list
 
 
 %btn {     //with % create a Shadow class
@@ -40,7 +41,7 @@ $color-btn-cool: $blue;
     }
     img {
         display: block;
-        border-radius: 10px;
+        border-radius: nth($roundness, 1);//show - for 1 type //$roundness//10px 0px 10px 0px;
         max-width: 100%;
         height: auto;
     }
