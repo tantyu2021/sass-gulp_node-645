@@ -24,7 +24,9 @@
   }
 } 
 .jumbotron {
-    @include backimage('../images/pier.jpg', 500);  //background: $blue;
-    //height: 500px; - remove and put as an parameter
-
+    @include backimage('../images/pier.jpg');  
+}
+//finally remove , 500; was value -height: 500px; - remove and put as an parameter; was before-background: $blue;
+.bridge {
+    @include backimage('../images/bridge.jpg', 300px);  //default in mixins 500px
 }

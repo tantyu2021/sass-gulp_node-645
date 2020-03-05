@@ -1,5 +1,8 @@
-@mixin backimage($image, $height: 100vh) { //height'll ajust automatically-viewport height
-    background: url($image);
+@mixin backimage($image, $height: 500px) { //100vh -viewport height
+    background: linear-gradient(to bottom,
+     rgba(0,0,0,0),
+     rgba(0,0,0,.8)),
+    url($image);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
