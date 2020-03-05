@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.btn, .btn-default, .btn-hot, .btn-cool {
+.btn-default, .btn-hot, .btn-cool {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
