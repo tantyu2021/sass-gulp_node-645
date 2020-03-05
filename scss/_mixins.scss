@@ -1,0 +1,7 @@
+@mixin backimage($image, $height: 100vh) { //height'll ajust automatically-viewport height
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: $height;
+}
