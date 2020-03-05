@@ -8,3 +8,14 @@
     background-size: cover;
     height: $height;
 }
+//using float creats overlaping effect, need make clearIt class,
+
+@mixin clearfix {
+    &:before, &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

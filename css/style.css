@@ -449,30 +449,48 @@ h1, h2, h3, h4, h5, h6 {
   list-style-type: none;
 }
 
-.media .media .item {
-  margin-bottom: 20px;
+.media .item {
   border-top: 1px dotted #D14348;
   padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
-.media .media .head {
+.media .item:hover {
+  background: #e9cf3e;
+}
+
+.media .item:last-of-type {
+  border-bottom: 1px dotted #D14348;
+}
+
+.media .item:before, .media .item:after {
+  content: '';
+  display: table;
+}
+
+.media .item:after {
+  clear: both;
+}
+
+.media .head {
   margin: 0;
   padding: 0;
   color: #0076A3;
   font-size: 2rem;
 }
 
-.media .media p {
+.media p {
   margin: 0;
   font-size: 1.5rem;
 }
 
-.media .media img {
+.media img {
   float: left;
   margin-right: 10px;
 }
 
-.media .media a {
+.media a {
   text-decoration: none;
   color: #022933;
   text-transform: uppercase;
