@@ -24,6 +24,7 @@
   }
 } 
 .jumbotron {
+    margin-top: 0; //fix gap btwn img, nav
     @include backimage('../images/pier.jpg');  
 }
 //finally remove , 500; was value -height: 500px; - remove and put as an parameter; was before-background: $blue;

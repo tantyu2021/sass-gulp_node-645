@@ -31,3 +31,10 @@
         margin-right: 0;
     }    
 }
+
+// MEDIA QUERY RULE
+@mixin break($length) {
+    @media (min-width: $length) {
+        @content; 
+    }
+}
