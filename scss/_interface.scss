@@ -19,18 +19,30 @@ $roundness: 20px 0px 20px 0px; //creating a list
     color: $background; //$text-color;
 }
 
-.btn-default {
-    background: $color-btn-default;
-    @extend %btn; //with % create a Shadow class
+//1.create 2 lists
+$color-btn-names: 'default', 'hot', 'cool';
+$color-btn-values: $text-color, $red, $blue;
+//2.programmatically construct classes
+@each $name in $color-btn-names {
+    $i: index($color-btn-names, $name);
+    .btn-#{$name} {
+        @extend %btn;
+        background-color: nth($color-btn-values, $i);
+    }
 }
-.btn-hot {
-    @extend %btn;//with % create a Shadow class
-    background: $color-btn-hot;
-}
-.btn-cool {
-    @extend %btn;//with % create a Shadow class
-    background: $color-btn-cool;
-}
+//3.now can remove it
+// .btn-default {
+//     background: $color-btn-default;
+//     @extend %btn; //with % create a Shadow class
+// }
+// .btn-hot {
+//     @extend %btn;//with % create a Shadow class
+//     background: $color-btn-hot;
+// }
+// .btn-cool {
+//     @extend %btn;//with % create a Shadow class
+//     background: $color-btn-cool;
+// }
 
 .grid {
     margin-bottom: 10px;
