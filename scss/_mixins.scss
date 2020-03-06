@@ -32,9 +32,27 @@
     }    
 }
 
-// MEDIA QUERY RULE
-@mixin break($length) {
-    @media (min-width: $length) {
-        @content; 
+// MEDIA QUERY RULE. 1.do rules, if(min-length) do this. -length- parameter, agrument(can be $first, $second,...)
+//@mixin break($length)  
+//  @media (min-width: $length) {
+//     @content; 
+// }
+// }
+@mixin break($args...) {
+    @if length($args) == 1 {
+        @media (min-width: nth($args, 1)) {
+            @content; 
+        }
+    } @else {
+        @media (min-width: nth($args, 1)) and
+               (max-width: nth($args, 2)) {
+            @content; 
+        }
     }
 }
+    // @if length($args) == 2 {
+    //     @media (min-width: nth($args, 1)) and
+    //            (max-width: nth($args, 2)) {
+    //         @content; 
+    //     }
+    // }

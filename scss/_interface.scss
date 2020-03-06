@@ -41,7 +41,7 @@ $roundness: 20px 0px 20px 0px; //creating a list
     }
     img {
         display: block;
-        border-radius: nth($roundness, 1);//show - for 1 type //$roundness//10px 0px 10px 0px;
+        border-radius: $roundness;//nth($roundness, 1);//show - for 1 type //$roundness//10px 0px 10px 0px;
         max-width: 100%;
         height: auto;
     }
