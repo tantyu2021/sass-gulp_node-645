@@ -15,11 +15,19 @@ a {
     background-color:  $background; // #EEE8D6;
   }
   
+  //1.create list of values for looping through lists with @for
+  $heading-colors: $blue, $purple, $green, $red, $red, $orange, $yellow;
+
   h1, h2, h3, h4, h5, h6 {
-      color: $red;
+      //2.color: $red;-after creating $heading-colors
       font-family: 'Oswald', sans-serif;
   }
-
+//3. looping through the list. # represents the item
+@for $item from 1 through length($heading-colors) {
+  h#{$item} {
+    color: nth($heading-colors, $item);
+  }
+}
   .container {
     width: 80%;
     margin: 0 auto;
