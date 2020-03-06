@@ -1,7 +1,7 @@
 $color-btn-text: $darkblue;
-$color-btn-default: $text-color;
-$color-btn-hot: $red;
-$color-btn-cool: $blue;
+// $color-btn-default: $text-color; dont use after create maps for btns colors
+// $color-btn-hot: $red;
+// $color-btn-cool: $blue;
 $roundness: 20px 0px 20px 0px; //creating a list
 
 
@@ -19,17 +19,36 @@ $roundness: 20px 0px 20px 0px; //creating a list
     color: $background; //$text-color;
 }
 
+//4.now can remove it
 //1.create 2 lists
-$color-btn-names: 'default', 'hot', 'cool';
-$color-btn-values: $text-color, $red, $blue;
-//2.programmatically construct classes
-@each $name in $color-btn-names {
-    $i: index($color-btn-names, $name);
+// $color-btn-names: 'default', 'hot', 'cool';
+// $color-btn-values: $text-color, $red, $blue;
+
+//5.creating maps in Sass(arrays)
+$color-btns:( 
+    default: $text-color,
+    hot: $red,
+    cool: $blue,
+    purple: $purple
+    ) ;
+
+//6. little change in 2.
+@each $name, $value in $color-btns {
+    //$i: index($color-btn-names, $name);
     .btn-#{$name} {
         @extend %btn;
-        background-color: nth($color-btn-values, $i);
+        // background-color: nth($color-btn-values, $i);
+        background-color: $value;
     }
 }
+//2.programmatically construct classes
+// @each $name in $color-btn-names {
+//     $i: index($color-btn-names, $name);
+//     .btn-#{$name} {
+//         @extend %btn;
+//         background-color: nth($color-btn-values, $i);
+//     }
+// }
 //3.now can remove it
 // .btn-default {
 //     background: $color-btn-default;

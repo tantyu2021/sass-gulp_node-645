@@ -396,7 +396,7 @@ h7 {
   margin: 0 auto;
 }
 
-.btn-default, .btn-hot, .btn-cool {
+.btn-default, .btn-hot, .btn-cool, .btn-purple {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -423,6 +423,10 @@ h7 {
 
 .btn-cool {
   background-color: #0076A3;
+}
+
+.btn-purple {
+  background-color: #6D73C2;
 }
 
 .grid {
