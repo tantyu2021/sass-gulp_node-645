@@ -597,16 +597,16 @@ h7 {
   border-bottom: 1px dotted #0076A3;
 }
 
-> thead, > tr {
+.table > thead, .table > tr {
   background-color: #0076A3;
   color: #EEE8D6;
 }
 
-> thead:hover, > tr:hover {
+.table > thead:hover, .table > tr:hover {
   background-color: compliment(#0076A3);
 }
 
-> thead > th, > tr > th {
+.table > thead > th, .table > tr > th {
   border-bottom: 0;
 }
 

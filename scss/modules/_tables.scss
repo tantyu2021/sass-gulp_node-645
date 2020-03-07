@@ -29,7 +29,7 @@ $color-even-cells: transparentize($yellow, .7);
             }
         }
     }    
-} 
+
 
 > thead, > tr {
     background-color: $blue;
@@ -40,4 +40,4 @@ $color-even-cells: transparentize($yellow, .7);
     > th {
         border-bottom: 0;
     }
-}
+} } 
