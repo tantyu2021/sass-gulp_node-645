@@ -9,6 +9,8 @@ header, footer  {
 footer .container {
     margin: 0; //make fnav center
 }
+// ===================================
+
 nav {
     header & {
         background-color: darken($blue, 15%);
